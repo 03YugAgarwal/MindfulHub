@@ -1,0 +1,145 @@
+.postContainer {
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.postPageDelete {
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #678c70;
+    transition: background-color 0.3s ease;
+}
+
+.postPageDelete:hover {
+    background-color: #9a7864;
+}
+
+.commentContainer {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.commentContainer h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.commentContainer h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inputContainer button {
+    margin-left: 10px;
+    width: 10vw;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #678c70;
+    transition: background-color 0.3s ease;
+}
+
+.inputContainer button:hover {
+    background-color: #9a7864;
+}
+
+.inputContainer input[type="text"] {
+    width: 50vw;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.inputContainer input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.inputContainer label {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.comments {
+    width: 70vw;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.commentMessage {
+    width: 70%;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.commentAuthor {
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .commentContainer {
+        width: 70%;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+    }
+
+    .inputContainer input[type="checkbox"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .inputContainer button {
+        width: 70%;
+        margin-top: 10px;
+    }
+}

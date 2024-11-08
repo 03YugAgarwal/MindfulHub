@@ -1,0 +1,117 @@
+.createpost {
+  margin-bottom: 133px;
+}
+
+.createpost_container {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  height: 512px;
+  margin: auto;
+  background-color: #b4c8b1;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.Post_box {
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.createpost_left {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.createpost_left h1 {
+  color: #333333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.createpost_left h4 {
+  color: #5c5c5c;
+  font-size: 1em;
+}
+
+.createpost_right {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createpost_right input,
+.createpost_right textarea,
+.createpost_right button {
+  width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createpost_right textarea {
+  resize: vertical;
+  margin-bottom: 16px;
+}
+
+.createpost_right input::placeholder,
+.createpost_right textarea::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+
+.createpost_right_checkbox {
+  margin: 10px auto;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.PostAnonLable {
+  margin: 0px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.checkboxAnon {
+  margin: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.createpost_right button {
+  background-color: #678c70;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createpost_right button:hover {
+  background-color: #9a7864;
+}
+
+.createpost_left {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  background: url("../../public/CreatePost_Background.jpg") center/cover;
+  border-radius: 8px 0 0 8px;
+}

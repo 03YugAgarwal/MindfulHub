@@ -1,0 +1,106 @@
+.landing_hero {
+    height: 300px;
+}
+
+.landing_hero h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 10vh;
+}
+
+.landing_hero p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.feature_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+
+    background-color: #a9d0b1;
+
+    margin: 10vh auto;
+}
+
+.feature_section h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.feature_section>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature_item p {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.testimonial_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 70%;
+    margin: 10vh auto;
+}
+
+.testimonial_section>h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.getStarted_section>h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.getStarted_section>p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.getStarted_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 10vh auto;
+}
+
+.getStarted_section button {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: #678c70;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+    color: #333333;
+}
+
+.getStarted_section button:hover {
+    background-color: #9a7864;
+}
+
+@media screen and (max-width: 850px) {
+    .landing_hero {
+        height: 500px;
+    }
+}

@@ -1,0 +1,32 @@
+.blogPage {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: #fffafa;
+    border: 1px solid #cefdce;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.blogPage__main h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.blogPage__main h4 {
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.Blogpage_Intro {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}

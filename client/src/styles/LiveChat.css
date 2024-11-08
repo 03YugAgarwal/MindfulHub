@@ -1,0 +1,56 @@
+.liveChat {
+  margin-bottom: 95px;
+}
+
+.LiveChat_Intro {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.liveChat h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.liveChat_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.liveChat textarea {
+  width: 50%;
+  height: 10vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.liveChat button {
+  height: 5vh;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: #a9d0b1;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.liveChat_messageArea {
+  width: 70vw;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}

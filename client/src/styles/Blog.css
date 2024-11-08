@@ -1,0 +1,27 @@
+.blog__container {
+    width: 70vw;
+    margin: 0 auto;
+    height: 50vh;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 112px;
+}
+
+.blog__container h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blog__container p {
+    font-weight: 500;
+}
+
+.blog__container h5 {
+    font-weight: 800;
+}

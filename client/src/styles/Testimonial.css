@@ -1,0 +1,48 @@
+.testimonial-container {
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.testimonial-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.testimonial-container button {
+    height: 5vh;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #678c70;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.testimonial-container button:hover {
+    background-color: #9a7864;
+}
+
+.testimonial-container>.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .testimonial-container {
+        width: 80%;
+    }
+}
