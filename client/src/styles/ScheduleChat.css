@@ -1,11 +1,37 @@
 /* Container Styling */
+.schedulechat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+/* Header Styling */
+.schedulechat_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.schedulechat_header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.schedulechat_header h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Main Container */
 .schedulechat_container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 512px;
-    margin-top: 24px;
-    margin-bottom: 0px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /* Main Box */
@@ -13,24 +39,22 @@
     display: flex;
     width: 100%;
     max-width: 1024px;
-    height: 100%;
-    margin: auto;
     background-color: #b4c8b1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     border: 1px solid #ccc;
+    overflow: hidden;
 }
 
 /* Left Section */
 .schedulechat_left {
     flex: 1;
-    overflow: hidden;
-    position: relative;
-    border-radius: 8px 0 0 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
 .schedulechat_left img {
@@ -38,20 +62,7 @@
     height: 256px;
     object-fit: cover;
     border-radius: 8px;
-    margin-top: 10px;
-}
-
-.left-content {
-    text-align: center;
-}
-
-.left-content h1 {
-    font-size: 2rem;
-}
-
-.left-content h4 {
-    font-size: 1rem;
-    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Right Section */
@@ -59,22 +70,20 @@
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 0 8px 8px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 
-/* Form Group */
+/* Form Styling */
 .form-group {
     margin-bottom: 12px;
     width: 100%;
 }
 
-.schedulechatLable {
+label {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     color: #5c5c5c;
 }
 
@@ -91,9 +100,8 @@ textarea {
     resize: none;
 }
 
-/* Button */
+/* Submit Button */
 .submit {
-    font-family: 'Raleway', sans-serif;
     padding: 12px 24px;
     border: none;
     border-radius: 4px;
@@ -114,43 +122,31 @@ textarea {
     }
 
     .schedulechat_left {
-        display: none;
+        display: none; /* Hide left section on smaller screens */
     }
 
     .schedulechat_right {
-        border-radius: 8px;
         width: 100%;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .form-group {
-        width: 100%;
-    }
-
-    input, textarea {
-        width: 100%;
+        border-radius: 8px;
     }
 }
 
 @media (max-width: 480px) {
-    .schedulechat_container {
+    .schedulechat {
         padding: 10px;
+    }
+
+    .schedulechat_header h1 {
+        font-size: 1.8rem;
+    }
+
+    .schedulechat_header h4 {
+        font-size: 0.9rem;
     }
 
     .submit {
         width: 100%;
         padding: 10px;
-    }
-
-    .left-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .left-content h4 {
-        font-size: 0.9rem;
     }
 }

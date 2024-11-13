@@ -1,12 +1,15 @@
+/* Overall container */
 .createpost {
   margin-bottom: 133px;
+  padding: 0 16px; /* Add some padding for mobile view */
 }
 
+/* Container for the form */
 .createpost_container {
   display: flex;
+  flex-direction: column; /* Stack vertically on smaller screens */
   width: 100%;
   max-width: 1024px;
-  height: 512px;
   margin: auto;
   background-color: #b4c8b1;
   margin-top: 24px;
@@ -16,8 +19,10 @@
   border: 1px solid #ccc;
 }
 
+/* Inner box for the content */
 .Post_box {
   display: flex;
+  flex-direction: column; /* Stack vertically on smaller screens */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -26,51 +31,45 @@
   flex: 1;
   padding: 20px;
   text-align: center;
+  position: relative;
+  background: url("../../public/CreatePost_Background.jpg") center/cover;
+  border-radius: 8px 8px 0 0; /* Rounded top corners on mobile */
 }
 
 .createpost_left h1 {
-  color: #333333;
-  font-size: 2em;
+  color: black;
+  font-size: 1.5em; /* Adjust font size for smaller screens */
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .createpost_left h4 {
-  color: #5c5c5c;
+  color: black;
   font-size: 1em;
 }
 
+/* Right side form elements */
 .createpost_right {
   flex: 1;
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 0 8px 8px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  border-radius: 0 0 8px 8px;
 }
 
 .createpost_right input,
 .createpost_right textarea,
 .createpost_right button {
-  width: 70%;
+  width: 90%; /* Full width on smaller screens */
   max-width: 400px;
   padding: 10px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.createpost_right textarea {
-  resize: vertical;
-  margin-bottom: 16px;
-}
-
-.createpost_right input::placeholder,
-.createpost_right textarea::placeholder {
-  font-family: 'Raleway', sans-serif;
-}
-
+/* Checkbox section */
 .createpost_right_checkbox {
   margin: 10px auto;
 }
@@ -81,23 +80,19 @@
 }
 
 .PostAnonLable {
-  margin: 0px;
   padding: 8px;
   cursor: pointer;
 }
 
 .checkboxAnon {
-  margin: 0px;
-  margin-bottom: 0px;
   cursor: pointer;
-  padding: 8px;
+  margin-right: 8px;
 }
 
 .createpost_right button {
   background-color: #678c70;
   color: #fff;
   border: none;
-  border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -107,11 +102,29 @@
   background-color: #9a7864;
 }
 
-.createpost_left {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  background: url("../../public/CreatePost_Background.jpg") center/cover;
-  border-radius: 8px 0 0 8px;
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .createpost_container {
+    flex-direction: row; /* Horizontal layout on larger screens */
+    height: auto;
+  }
+
+  .Post_box {
+    flex-direction: row; /* Side-by-side layout */
+  }
+
+  .createpost_left {
+    border-radius: 8px 0 0 8px; /* Left side rounded on larger screens */
+  }
+
+  .createpost_right {
+    border-radius: 0 8px 8px 0; /* Right side rounded on larger screens */
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjust heading sizes on smaller screens */
+  .createpost_left h1 {
+    font-size: 1.8rem;
+  }
 }

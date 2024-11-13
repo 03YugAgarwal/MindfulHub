@@ -25,21 +25,21 @@ const ScheduleChat = () => {
         setMessage('');
         setIsAnonymous(false);
 
-        alert('Scheduled Data Send Successfully!');
+        alert('Scheduled Data Sent Successfully!');
     };
 
     return (
         <div className="schedulechat">
+            <div className="schedulechat_header">
+                <h1>Schedule a Chat</h1>
+                <h4>
+                    Schedule a chat with a psychology expert to get help, help someone, or ask questions.
+                </h4>
+            </div>
             <div className="schedulechat_container">
                 <div className="box">
                     <div className="schedulechat_left">
                         <img src="SchedueleChat.jpg" alt="Background" />
-                        <div className="left-content">
-                            <h1>Schedule a Chat</h1>
-                            <h4>
-                                Schedule a chat with a psychology expert to get help, help someone, or ask questions.
-                            </h4>
-                        </div>
                     </div>
                     <div className="schedulechat_right">
                         <form onSubmit={handleScheduleChat}>

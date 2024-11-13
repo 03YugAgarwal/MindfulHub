@@ -1,49 +1,62 @@
+/* General Styles */
 .landing_hero {
     height: 300px;
-}
-
-.landing_hero h2 {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .landing_hero h2 {
     font-size: 4rem;
     font-weight: 900;
     margin-top: 10vh;
-}
-
-.landing_hero p {
-    text-align: center;
+  }
+  
+  .landing_hero p {
     width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
-}
-
-.feature_section {
+    line-height: 1.6;
+  }
+  
+  .feature_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
-
+    padding: 2rem 0;
     background-color: #a9d0b1;
-
     margin: 10vh auto;
-}
-
-.feature_section h2 {
+  }
+  
+  .feature_section h2 {
     font-size: 3rem;
     font-weight: 900;
-}
-
-.feature_section>div {
+  }
+  
+  .feature_section > div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.feature_item p {
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-.testimonial_section {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .feature_item {
+    width: 30%;
+    margin: 1rem 0;
+  }
+  
+  .feature_item h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .feature_item p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .testimonial_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,36 +64,42 @@
     padding: 1rem 0;
     width: 70%;
     margin: 10vh auto;
-}
-
-.testimonial_section>h2 {
+  }
+  
+  .testimonial_section > h2 {
     font-size: 3rem;
     font-weight: 900;
-}
-
-.getStarted_section>h2 {
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.getStarted_section>p {
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.getStarted_section {
+  }
+  
+  .getStarted_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin: 10vh auto;
-}
-
-.getStarted_section button {
+    text-align: center;
+  }
+  
+  .getStarted_section h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  .getStarted_section p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .getStarted_section .btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .getStarted_section button {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -90,17 +109,110 @@
     font-weight: 900;
     cursor: pointer;
     margin-bottom: 20px;
-    margin-right: 20px;
     transition: background-color 0.3s ease;
     color: #333333;
-}
-
-.getStarted_section button:hover {
+  }
+  
+  .getStarted_section button:hover {
     background-color: #9a7864;
-}
-
-@media screen and (max-width: 850px) {
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 850px) {
     .landing_hero {
-        height: 500px;
+      height: 400px;
     }
-}
+  
+    .landing_hero h2 {
+      font-size: 2.5rem;
+      margin-top: 20vh;
+    }
+  
+    .landing_hero p {
+      width: 80%;
+      font-size: 1rem;
+    }
+  
+    .feature_section {
+      padding: 2rem 1rem;
+    }
+  
+    .feature_section h2 {
+      font-size: 2.5rem;
+    }
+  
+    .feature_section > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature_item {
+      width: 80%;
+      margin: 1rem 0;
+    }
+  
+    .testimonial_section {
+      width: 90%;
+    }
+  
+    .getStarted_section h2 {
+      font-size: 2.5rem;
+    }
+  
+    .getStarted_section p {
+      width: 80%;
+      font-size: 1rem;
+    }
+  
+    .getStarted_section .btn {
+      flex-direction: column;
+    }
+  
+    .getStarted_section button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Small screen adjustments */
+  @media screen and (max-width: 480px) {
+    .landing_hero {
+      height: 350px;
+    }
+  
+    .landing_hero h2 {
+      font-size: 2rem;
+    }
+  
+    .landing_hero p {
+      width: 90%;
+      font-size: 0.9rem;
+    }
+  
+    .feature_item h3 {
+      font-size: 1.5rem;
+    }
+  
+    .feature_item p {
+      font-size: 0.9rem;
+    }
+  
+    .getStarted_section h2 {
+      font-size: 2rem;
+    }
+  
+    .getStarted_section p {
+      width: 90%;
+      font-size: 0.9rem;
+    }
+  
+    .getStarted_section .btn {
+      flex-direction: column;
+      width: 80%;
+    }
+  
+    .getStarted_section button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }

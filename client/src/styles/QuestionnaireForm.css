@@ -1,19 +1,29 @@
+/* Container for the form */
+.Box_qn {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .Box_qn h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 
 .Box_qn p {
     text-align: center;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
+/* Form container */
 .Form_qn {
-    width: 50vw;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #fffafa;
     border-radius: 8px;
@@ -22,19 +32,38 @@
     padding: 20px;
 }
 
+/* Question container */
 .div_qn {
     width: 100%;
-    margin: 0 auto;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .questionsLable {
     display: block;
-    align-items: center;
-    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+.answerLable {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.answerLable input {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.answerLable:hover input {
+    transform: scale(1.2);
+}
+
+/* Submit button */
 .btn_qn {
     padding: 10px 20px;
     border: none;
@@ -43,28 +72,66 @@
     color: #fff;
     background-color: #678c70;
     transition: background-color 0.3s ease;
-    margin: 20px auto 0;
     display: block;
+    margin: 20px auto 0;
+    font-size: 1rem;
 }
-
 
 .btn_qn:hover {
     background-color: #9a7864;
 }
 
-.answerLable {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 20px;
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .Box_qn h1 {
+        font-size: 2rem;
+    }
+
+    .Box_qn p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .Form_qn {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .questionsLable {
+        font-size: 0.9rem;
+    }
+
+    .answerLable {
+        font-size: 0.9rem;
+        margin-right: 8px;
+    }
+
+    .btn_qn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
 }
 
-.answerLable input {
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-    transition: transform 0.3s ease;
-}
+@media (max-width: 480px) {
+    .Box_qn h1 {
+        font-size: 1.8rem;
+    }
 
-.answerLable:hover input {
-    transform: scale(1.2);
+    .Form_qn {
+        padding: 10px;
+    }
+
+    .questionsLable {
+        font-size: 0.85rem;
+    }
+
+    .answerLable {
+        font-size: 0.85rem;
+        margin-right: 5px;
+    }
+
+    .btn_qn {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
 }
